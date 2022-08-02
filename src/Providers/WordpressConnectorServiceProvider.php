@@ -37,12 +37,21 @@ class WordpressConnectorServiceProvider extends ServiceProvider
                     'permissions' => ['settings.options'],
                 ])
                 ->registerItem([
-                    'id'          => 'cms-plugin-wordpress-connector2',
+                    'id'          => 'cms-plugin-woocommerce-products',
                     'priority'    => 10,
                     'parent_id'   => 'cms-plugin-wordpress-connector',
-                    'name'        => 'plugins/wordpress-connector::wordpress-connector.name',
+                    'name'        => 'Simple products',
                     'icon'        => 'fab fa-wordpress',
-                    'url'         => route('wordpress-connector'),
+                    'url'         => route('wordpress-connector.simple'),
+                    'permissions' => ['settings.options'],
+                ])
+                ->registerItem([
+                    'id'          => 'cms-plugin-woocommerce-variations',
+                    'priority'    => 10,
+                    'parent_id'   => 'cms-plugin-wordpress-connector',
+                    'name'        => 'Variations products',
+                    'icon'        => 'fab fa-wordpress',
+                    'url'         => route('wordpress-connector.variations'),
                     'permissions' => ['settings.options'],
                 ]);        
    
