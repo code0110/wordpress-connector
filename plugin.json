@@ -1,0 +1,9 @@
+{
+    "name": "WordPress Connector",
+    "namespace": "Botble\\WordpressConnector\\",
+    "provider": "Botble\\WordpressConnector\\Providers\\WordpressConnectorServiceProvider",
+    "author": "Botezatu Catalin",
+    "url": "https://metal-rom.ro",
+    "version": "1.0",
+    "description": "Wordpress Connector"
+}
